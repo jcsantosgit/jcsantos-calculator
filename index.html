@@ -35,7 +35,8 @@
 
         .calculator-display {
             width: 100%;
-            height: 60px;
+            height: auto;
+            min-height: 52px;
             background: #fff;
             flex-direction: column;
             padding: 5px;
@@ -64,6 +65,35 @@
             height: 60px;
             margin-top: 5px;
         }
+
+        .display-top {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .display-bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+        }
+
+        #time {
+            color: #ccc;
+            font-size: 12px;
+        }
+
+        #date {
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        #display {
+            color: #555;
+            font-size: 22px;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
@@ -72,11 +102,11 @@
             <h3>JS Calculator</h3>
             <div class="calculator-display">
                 <div class="display-top">
-                    <span>00:00</span>
-                    <span>12/01/2024</span>
+                    <span id="time">00:00</span>
+                    <span id="date">12/01/2024</span>
                 </div>
                 <div class="display-bottom">
-                    <span>0</span>
+                    <span id="display">0</span>
                 </div>
             </div>
             <div class="calculator-options">

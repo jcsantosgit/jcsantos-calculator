@@ -16,6 +16,7 @@
     box-sizing: border-box;
     border-radius: 13px;
     border: 1px solid #444;
+    box-shadow: 5px -5px 10px rgba(0,0,0,0.2);
 }
 
 .calculator h3 {
@@ -54,14 +55,23 @@
 }
 
 .op1 {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     flex-grow: 2;
-    background: yellow;
+    width: 70%;
 }
 
 .op2 {
+    display: flex;
+    justify-content: end;
     flex-grow: 2;
-    background: #ccc;
+    align-self: stretch;
+}
+
+.btn-plus {
+    height: auto !important;
+    align-self: stretch;
 }
 
 .btn-calc {

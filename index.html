@@ -3,98 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .calculator-container {
-            width: auto;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .calculator {
-            width: 320px;
-            height: 500px;
-            background: #333;
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
-            box-sizing: border-box;
-            border-radius: 13px;
-            border: 1px solid #444;
-        }
-
-        .calculator h3 {
-            text-align: center;
-            color: #fff;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 700;
-            width: 100%;
-        }
-
-        .calculator-display {
-            width: 100%;
-            height: auto;
-            min-height: 52px;
-            background: #fff;
-            flex-direction: column;
-            padding: 5px;
-            box-sizing: border-box;
-        }
-
-        .calculator-options {
-            width: 100%;
-            height: auto;
-            margin-top: 10px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .options {
-            display: flex;
-            width: 100%;   
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
-        .btn-calc {
-            width: 60px;
-            height: 60px;
-            margin-top: 5px;
-        }
-
-        .display-top {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            justify-content: space-between;
-        }
-
-        .display-bottom {
-            display: flex;
-            flex-direction: row;
-            justify-content: end;
-        }
-
-        #time {
-            color: #ccc;
-            font-size: 12px;
-        }
-
-        #date {
-            color: #ccc;
-            font-size: 14px;
-        }
-
-        #display {
-            color: #555;
-            font-size: 22px;
-            font-weight: 500;
-        }
-    </style>
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <main class="calculator-container">
@@ -128,8 +38,8 @@
                     <button class="btn-calc">6</button>
                     <button class="btn-calc">-</button>
                 </div>
-                <div class="options">
-                    <div>
+                <div class="options op">
+                    <div class="op1">
                         <button class="btn-calc">1</button>
                         <button class="btn-calc">2</button>
                         <button class="btn-calc">3</button>
@@ -137,7 +47,7 @@
                         <button class="btn-calc">.</button>
                         <button class="btn-calc">=</button>                        
                     </div>
-                    <div>
+                    <div class="op2">
                         <button class="btn-calc">+</button>
                     </div>
                 </div>
